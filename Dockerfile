@@ -14,4 +14,4 @@ VOLUME /home/dev/.ssh
 ADD harden.sh /usr/bin/harden.sh
 RUN chmod 700 /usr/bin/harden.sh && /usr/bin/harden.sh
 USER dev
-CMD ["/usr/sbin/sshd", "-D"]
+CMD ["/usr/sbin/sshd", "-eD"]
