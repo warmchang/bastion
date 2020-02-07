@@ -85,5 +85,4 @@ find $sysdirs -xdev -type l -exec test ! -e {} \; -delete
 find /usr/bin /bin ! -type d \
   -a ! -name sh \
   -a ! -name ssh \
-  -a ! -name busybox \
   -delete
