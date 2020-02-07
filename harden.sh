@@ -27,8 +27,8 @@ find $sysdirs -xdev -type d \
   -exec chmod 0755 {} \;
 
 # Remove unnecessary user accounts, including root.
-sed -i -r '/^(dev|sshd)/!d' /etc/group
-sed -i -r '/^(dev|sshd)/!d' /etc/passwd
+sed -i -r '/^(user|sshd)/!d' /etc/group
+sed -i -r '/^(user|sshd)/!d' /etc/passwd
 
 # Remove apk configs.
 find $sysdirs -xdev -regex '.*apk.*' -exec rm -fr {} +
