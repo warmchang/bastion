@@ -84,5 +84,5 @@ find $sysdirs -xdev -type l -exec test ! -e {} \; -delete
 # Remove all but a handful of admin commands.
 find /usr/bin /bin ! -type d \
   -a ! -name sh \
-  -a ! -name ssh \
+  -a ! -name busybox \
   -delete
